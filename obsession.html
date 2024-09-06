@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unhealthy Obsessions</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #e6e6e6;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('your-background-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #ff6b6b;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.4;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        section {
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .obsession {
+            flex: 1 1 calc(33% - 40px);
+            margin: 20px;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .obsession:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 107, 107, 0.8);
+        }
+
+        .obsession h2 {
+            font-size: 2em;
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+
+        .obsession p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d0d0d;
+            color: #7d7d7d;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .parallax {
+            background: url('your-parallax-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Background Music */
+        audio {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><a href="#">Unhealthy Obsessions</a></div>
+        <div class="nav-links">
+            <a href="#section1">Obsession 1</a>
+            <a href="#section2">Obsession 2</a>
+            <a href="#section3">Obsession 3</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Unhealthy Obsessions</h1>
+    </header>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Content Sections -->
+    <section id="section1">
+        <div class="obsession">
+            <h2>Obsession 1: Soccer</h2>
+            <p>I breath and live by soccer. It is really the only sport I can catch myself playing all day long and still not get bored. There are so many things you can learn with a ball like kicking, skill moves, and shooting. All of these skills take emense time to master and are fun to master.</p>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/Nwr4DAciyDs" title="[4K] Messi「Edit」(SDP Interlude)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="obsession">
+            <h2>Obsession 2: Video Games</h2>
+            <p>I love many types of video games. They can teach you many skills right from teh comfort of your home. Certain games can teach you to think outside the box for solutions to problems related to the game, others teach you to make split second desicions racionally increasing your reaction time exponentailly depending on the game.</p>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="obsession">
+            <h2>Obsession 3: Running</h2>
+            <p>Running is something that most people would find to be not enjoyable for rather obvious reasons, but I'd like to think otherwise. Allthough running can be rather tiring to most people, I find that running can give me a sense of relaxation at times due to how calm it can be. Also when you go run with friends, you can create very close bonds with them while expirenceing new things and making new memories together.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Unhealthy Obsessions | Designed by [Juan]</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+
+    <!-- Background Music -->
+    <audio controls autoplay loop>
+        <source src="your-music-file.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>
